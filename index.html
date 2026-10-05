@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YOUR NAME | Creative Frontend Developer Portfolio</title>
+<meta name="description" content="Portfolio of a creative frontend developer building fast, responsive and interactive websites with HTML, CSS and JavaScript.">
+<meta name="keywords" content="frontend developer, JavaScript, portfolio, web design">
+<meta property="og:title" content="YOUR NAME | Creative Developer"><meta property="og:description" content="Premium frontend development and UI implementation.">
+<meta property="og:type" content="website"><meta property="og:image" content="images/project1.jpg">
+<link rel="canonical" href="https://example.com/"><link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="preloader" role="status"><div class="pl-logo">&lt;YN/&gt;</div><p>INITIALIZING PORTFOLIO...</p><div class="pl-bar"><span id="plBar"></span></div><b id="plPct">0%</b></div>
+<div id="progress"></div><div class="cursor-dot"></div><div class="cursor-ring"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<header id="nav"><nav class="container nav-in" aria-label="Main">
+<a href="#home" class="logo">M.AHSAN</a>
+<ul id="menu"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+<button id="theme" class="icon-btn" aria-label="Toggle theme">◐</button>
+<button id="burger" class="icon-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+</nav></header>
+
+<main>
+<section id="home" class="hero container">
+<div class="hero-text">
+<span class="badge"><i></i>Available for projects</span>
+<h1>Creative Developer Building Digital Experiences</h1>
+<p class="role">I'm a <span id="typed"></span><span class="caret">|</span></p>
+<p class="lead">I design and build fast, accessible interfaces with HTML, CSS and JavaScript, from landing pages to full dashboards.</p>
+<div class="btns"><a href="#projects" class="btn primary">View my work</a><a href="#" class="btn ghost" download>Download CV</a></div>
+<div class="social"><a href="#" aria-label="GitHub">GitHub</a><a href="#" aria-label="LinkedIn">LinkedIn</a><a href="#" aria-label="Instagram">Instagram</a><a href="mailto:you@example.com" aria-label="Email">Email</a></div>
+</div>
+<div class="hero-visual" aria-hidden="true"><div class="orb" data-depth="30"></div>
+<div class="code-win glass" data-depth="15"><div class="dots"><i></i><i></i><i></i></div><pre><code><b>const</b> dev = {
+  name: <u>"Your Name"</u>,
+  stack: ["HTML","CSS","JS"],
+  coffee: <u>Infinity</u>
+};</code></pre></div></div>
+</section>
+
+<section id="about" class="container sec"><h2 class="reveal">About me</h2>
+<div class="about-grid"><img class="reveal avatar" src="images/profile.jpg" alt="Portrait placeholder of the developer" loading="lazy" width="400" height="300">
+<div class="reveal"><p class="lead">I turn ideas into polished, performant websites. I care about clean code, motion that means something, and interfaces people enjoy using.</p>
+<p>Replace this text with your own story: where you started, what you build best, and what you are learning now.</p>
+<div class="stats"><div class="glass"><b data-count="3">0</b>+<span>Years experience</span></div><div class="glass"><b data-count="50">0</b>+<span>Projects</span></div><div class="glass"><b data-count="30">0</b>+<span>Happy clients</span></div><div class="glass"><b data-count="15">0</b>+<span>Technologies</span></div></div></div></div></section>
+
+<section id="skills" class="container sec"><h2 class="reveal">Skills</h2><div class="grid skills" id="skillGrid"></div></section>
+
+<section id="projects" class="container sec"><h2 class="reveal">Projects</h2>
+<div class="filters" role="group" aria-label="Filter projects"><button class="active" data-f="all">All</button><button data-f="web">Web</button><button data-f="js">JavaScript</button><button data-f="ui">UI/UX</button><button data-f="games">Games</button></div>
+<div class="grid projects" id="projGrid"></div></section>
+
+<section id="services" class="container sec"><h2 class="reveal">Services</h2><div class="grid services" id="svcGrid"></div></section>
+
+<section id="experience" class="container sec"><h2 class="reveal">Experience</h2>
+<ol class="timeline">
+<li class="reveal glass"><time>2024</time><h3>Frontend Developer</h3><p>Built responsive marketing sites and component libraries.</p></li>
+<li class="reveal glass"><time>2025</time><h3>JavaScript Developer</h3><p>Shipped interactive dashboards and API-driven apps.</p></li>
+<li class="reveal glass"><time>2026</time><h3>Creative Web Developer</h3><p>Leading motion-rich builds for brands and startups.</p></li></ol></section>
+
+<section class="tech" aria-label="Technologies"><div class="marquee"><div class="track" id="track"></div></div></section>
+
+<section id="testimonials" class="container sec"><h2 class="reveal">Testimonials</h2>
+<div class="slider" id="slider" aria-roledescription="carousel"><div class="slides" id="slides"></div>
+<div class="s-ctrl"><button id="prev" class="icon-btn" aria-label="Previous">‹</button><div id="dots"></div><button id="next" class="icon-btn" aria-label="Next">›</button></div></div></section>
+
+<section id="contact" class="container sec"><h2 class="reveal">Contact</h2>
+<form id="form" class="glass reveal" novalidate>
+<label>Name<input name="name" autocomplete="name"><small></small></label>
+<label>Email<input name="email" type="email" autocomplete="email"><small></small></label>
+<label class="full">Subject<input name="subject"><small></small></label>
+<label class="full">Message<textarea name="message" rows="5"></textarea><small></small></label>
+<button class="btn primary full" type="submit">Send message</button>
+<p id="status" class="full" role="status"></p></form></section>
+</main>
+
+<footer><div class="container foot"><div><a href="#home" class="logo">YOUR NAME</a><p>Building fast, accessible and memorable web experiences.</p></div>
+<div class="social"><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+<p>© 2026 YOUR NAME. All Rights Reserved.</p></div></footer>
+<button id="top" class="icon-btn" aria-label="Back to top">↑</button>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden><div class="m-box glass"><button class="icon-btn m-close" aria-label="Close">✕</button><div id="mBody"></div></div></div>
+<script src="script.js"></script>
+</body></html>
